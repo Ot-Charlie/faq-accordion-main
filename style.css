@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url('./assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+   font-family: 'Work Sans', sans-serif;
+}
+body{
+   
+   background-image: url('./assets/images/background-pattern-desktop.svg'),
+        linear-gradient(to bottom, hsl(275, 100%, 97%));
+    background-size:auto, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: hsl(0, 100%, 100%);
+   max-width: 50%;
+   width: 100%;
+   padding: 30px;
+   font-family: 'work sans', sans-serif;
+   border-radius: 15px;
+   margin-top: 50px;
+}
+h2{
+    color: hsl(292, 42%, 14%);
+    font-size: 1.25rem;
+    
+    cursor: pointer;
+}
+h2:hover{
+    color: #800080;
+}
+p{
+    color: hsl(292, 16%, 49%);
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.faq-section{
+    display: flex;
+   gap: 2rem;
+   margin-bottom: 30px;
+}
+.accordion-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.accordion-container{
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    padding-bottom: 10px;
+}
+.accordion-content {
+    display: none;
+}
+
+.accordion-content.active {
+    display: block; /* Show when active */
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:426px){
+    main{
+        max-width: 60%;
+      
+    }
+    .faq-section{
+        gap: 0.35rem;
+    }
+    .star-icon{
+        width: 20px;   
+    }
+    h1{
+        font-size: 1.25rem;
+    }
+        h2{
+        font-size: 0.75rem;
+       }
+       .reveal-btn{
+        width: 20px;
+       }
+       p{
+        font-size: 0.63rem;
+       }
+}
